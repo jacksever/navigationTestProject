@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NavigationTestProject</string>
+
+    <string name="fragment1">Fragment 1</string>
+    <string name="fragment2">Fragment 2</string>
+    <string name="fragment3">Fragment 3</string>
+    <string name="fragment4">Fragment 4</string>
+    <string name="fragment4_1">Fragment 4.1</string>
+    <string name="fragment4_2">Fragment 4.2</string>
+    <string name="fragment5">Fragment 5</string>
+    <string name="fragment5_1">Fragment 5.1</string>
+    <string name="fragment5_2">Fragment 5.2</string>
+    <string name="fragment5_3">Fragment 5.3</string>
+</resources>

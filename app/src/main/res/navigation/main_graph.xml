@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.navigationtestproject.fragments.Fragment1"
+        android:label="Fragment1"
+        tools:layout="@layout/fragment1">
+        <action
+            android:id="@+id/action_fragment1_to_fragment2"
+            app:destination="@id/fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.navigationtestproject.fragments.Fragment2"
+        android:label="Fragment2"
+        tools:layout="@layout/fragment2">
+        <action
+            android:id="@+id/action_fragment2_to_fragment3"
+            app:destination="@id/fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.navigationtestproject.fragments.Fragment3"
+        android:label="Fragment3"
+        tools:layout="@layout/fragment3">
+        <action
+            android:id="@+id/action_fragment3_to_group4_graph"
+            app:destination="@id/group4_graph" />
+    </fragment>
+    <navigation
+        android:id="@+id/group5_graph"
+        app:startDestination="@id/fragment5">
+        <fragment
+            android:id="@+id/fragment5"
+            android:name="com.example.navigationtestproject.fragments.Fragment5"
+            android:label="Fragment5"
+            tools:layout="@layout/fragment5">
+            <action
+                android:id="@+id/action_fragment5_to_fragment5_1"
+                app:destination="@id/fragment5_1" />
+            <action
+                android:id="@+id/action_fragment5_to_fragment5_2"
+                app:destination="@id/fragment5_2" />
+            <action
+                android:id="@+id/action_fragment5_to_fragment5_3"
+                app:destination="@id/fragment5_3" />
+        </fragment>
+        <fragment
+            android:id="@+id/fragment5_1"
+            android:name="com.example.navigationtestproject.fragments.Fragment5_1"
+            android:label="Fragment5_1"
+            tools:layout="@layout/fragment5_1" />
+        <fragment
+            android:id="@+id/fragment5_2"
+            android:name="com.example.navigationtestproject.fragments.Fragment5_2"
+            android:label="Fragment5_2"
+            tools:layout="@layout/fragment5_2" />
+        <fragment
+            android:id="@+id/fragment5_3"
+            android:name="com.example.navigationtestproject.fragments.Fragment5_3"
+            android:label="Fragment5_3"
+            tools:layout="@layout/fragment5_3" />
+    </navigation>
+    <navigation
+        android:id="@+id/group4_graph"
+        app:startDestination="@id/fragment4">
+        <fragment
+            android:id="@+id/fragment4"
+            android:name="com.example.navigationtestproject.fragments.Fragment4"
+            android:label="Fragment4"
+            tools:layout="@layout/fragment4">
+            <action
+                android:id="@+id/action_fragment4_to_fragment4_1"
+                app:destination="@id/fragment4_1" />
+            <action
+                android:id="@+id/action_fragment4_to_fragment4_2"
+                app:destination="@id/fragment4_2" />
+        </fragment>
+        <fragment
+            android:id="@+id/fragment4_1"
+            android:name="com.example.navigationtestproject.fragments.Fragment4_1"
+            android:label="Fragment4_1"
+            tools:layout="@layout/fragment4_1" />
+        <fragment
+            android:id="@+id/fragment4_2"
+            android:name="com.example.navigationtestproject.fragments.Fragment4_2"
+            android:label="Fragment4_2"
+            tools:layout="@layout/fragment4_2" />
+        <action
+            android:id="@+id/action_global_group5_graph"
+            app:destination="@id/group5_graph" />
+    </navigation>
+</navigation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment1"
+        android:icon="@drawable/ic_baseline_exposure_neg_2_24"
+        android:title="First Fragment" />
+    <item
+        android:id="@+id/fragment2"
+        android:icon="@drawable/ic_baseline_exposure_neg_1_24"
+        android:title="Second Fragment" />
+    <item
+        android:id="@+id/fragment3"
+        android:icon="@drawable/ic_baseline_exposure_zero_24"
+        android:title="Third Fragment" />
+    <item
+        android:id="@+id/group4_graph"
+        android:icon="@drawable/ic_baseline_exposure_plus_1_24"
+        android:title="Fourth Fragment" />
+    <item
+        android:id="@+id/group5_graph"
+        android:icon="@drawable/ic_baseline_exposure_plus_2_24"
+        android:title="Fifth Fragment" />
+</menu>
